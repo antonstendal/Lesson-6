@@ -1,4 +1,4 @@
-//Полиморфизм
+//РџРѕР»РёРјРѕСЂС„РёР·Рј
 function Car(name) {
 	
   this.name = name;
@@ -39,7 +39,7 @@ x.ride();
 var y = new Honda("Civic");     
 y.ride();   
 
-//Инкапсуляция
+//РРЅРєР°РїСЃСѓР»СЏС†РёСЏ
 
 function car() {
 	
@@ -59,7 +59,7 @@ MyCar.MyFunction("station wagon");
 var MyCar2 = new car();
 Mycar.MyFunction("crossover");
 
-//наследование
+//РќР°СЃР»РµРґРѕРІР°РЅРёРµ
 
 function Car(name) {	
   this.name = name;
