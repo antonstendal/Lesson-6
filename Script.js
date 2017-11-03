@@ -57,7 +57,6 @@ function Chevrolet(name) {
   Car.call(this, name);
 }
 	Chevrolet.prototype = new Car();
-
 	Chevrolet.prototype.ChangeName(newname);
 {
   this.name = newname;
