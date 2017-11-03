@@ -1,38 +1,30 @@
 //Полиморфизм
-function Car(name) {
-	
+function Car(name) {	
   this.name = name;
-
 }
 
-Car.prototype.ride = function() {
-	
+Car.prototype.ride = function() {	
   console.log(this.name + "move");
 }
 
-function Chevrolet(name) {
-	
+function Chevrolet(name) {	
   Car.call(this, name);
 }
 
-Chevrolet.prototype.ride = function() {
-	
-  Car.prototype.ride.call(this);
-  
+Chevrolet.prototype.ride = function() {	
+  Car.prototype.ride.call(this); 
   console.log("onLeft");
 }
 
-function Honda(name) {
-	
+function Honda(name) {	
   Car.call(this, name);
 }
 
-Honda.prototype.ride = function() {
-	
-  Car.prototype.ride.call(this);
-  
+Honda.prototype.ride = function() {	
+  Car.prototype.ride.call(this); 
   console.log("onRight");
 }
+
 var x = new Chevrolet("Cruze");     
 x.ride();  
                  
@@ -41,14 +33,10 @@ y.ride();
 
 //Инкапсуляция
 
-function car() {
-	
+function car() {	
   this.Type = "station wagon";
 }
-
-
-car.prototype.MyFunction = function(station wagon) {
-	
+car.prototype.MyFunction = function(station wagon) {	
   this.Type = "crossover";
 }
 
